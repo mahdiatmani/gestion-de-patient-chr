@@ -1,0 +1,44 @@
+juil. 20, 2021 11:17:55 PM backend.LoggerStartup <init>
+INFOS: Initialising Logger
+juil. 20, 2021 11:17:55 PM backend.Launcher$1 run
+INFOS: Launching Application
+juil. 20, 2021 11:17:55 PM backend.Launcher <init>
+INFOS: Creating Application Frame
+juil. 20, 2021 11:17:56 PM backend.Launcher <init>
+INFOS: Initialising Login Menu
+juil. 20, 2021 11:17:56 PM frontend.LoginMenu <init>
+INFOS: Initialising Fields
+juil. 20, 2021 11:17:56 PM frontend.LoginMenu <init>
+INFOS: Adding Fields to the Login Panel
+juil. 20, 2021 11:17:57 PM backend.Launcher$1 run
+INFOS: Application Successfully Launched
+juil. 20, 2021 11:18:02 PM backend.Practitioner <init>
+INFOS: Creating New Practitioner
+juil. 20, 2021 11:18:02 PM frontend.LoginMenu$2 actionPerformed
+INFOS: Creating New Practitioner
+juil. 20, 2021 11:18:02 PM frontend.LoginMenu$2 actionPerformed
+INFOS: Checking Credentials
+juil. 20, 2021 11:18:02 PM frontend.LoginMenu$2 actionPerformed
+INFOS: Correct Crendentials Entered
+juil. 20, 2021 11:18:02 PM frontend.LoginMenu$2 actionPerformed
+INFOS: Initialising Management Menu
+juil. 20, 2021 11:18:02 PM frontend.management.ManagementMenu <init>
+INFOS: Initialising Patient Menu
+juil. 20, 2021 11:18:02 PM frontend.management.PatientMenu <init>
+INFOS: Initialising Patient Menu Components
+juil. 20, 2021 11:18:03 PM frontend.management.PatientMenu <init>
+INFOS: Patient Menu Correctly Initialised
+juil. 20, 2021 11:18:03 PM frontend.management.ManagementMenu <init>
+INFOS: Adding Patient Menu to the Management Menu
+juil. 20, 2021 11:18:03 PM frontend.management.ManagementMenu <init>
+INFOS: Initialising Open File Button
+juil. 20, 2021 11:18:03 PM frontend.management.ManagementMenu <init>
+INFOS: Initialising Save To File Button
+juil. 20, 2021 11:18:03 PM frontend.management.ManagementMenu <init>
+INFOS: Initialising Add Button
+juil. 20, 2021 11:18:03 PM frontend.management.ManagementMenu <init>
+INFOS: Initialising Toolbar
+juil. 20, 2021 11:18:03 PM frontend.management.ManagementMenu <init>
+INFOS: Adding Buttons to Toolbar
+juil. 20, 2021 11:18:03 PM frontend.management.ManagementMenu <init>
+INFOS: Adding Toolbar To Management Menu
