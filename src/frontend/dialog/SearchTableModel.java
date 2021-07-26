@@ -10,7 +10,7 @@ import backend.LoggerStartup;
 /**
  * A simple class used to override the method responsible for making a default table editable.
  *
- * @author Alessandro
+ * @author EL MAHDI ATMANI
  * @version 1.0
  */
 public class SearchTableModel extends DefaultTableModel {

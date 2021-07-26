@@ -25,7 +25,7 @@ import backend.Patient;
  * Creates the Personal Details menu.
  * This menu contains all the basic information of a patient and allows the user to change the profile picture of a patient.
  *
- * @author Alessandro
+ * @author EL MAHDI ATMANI
  * @version 1.0
  */
 public class PersonalDetailsMenu extends JPanel {

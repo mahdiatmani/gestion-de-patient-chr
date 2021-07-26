@@ -16,7 +16,7 @@ import javax.swing.border.EmptyBorder;
 /**
  * Class responsible for launching the Patient Management System.
  *
- * @author Alessandro
+ * @author EL MAHDI ATMANI
  * @version 1.0
  */
 public class Launcher {

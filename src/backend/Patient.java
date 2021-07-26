@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 /**
  * A class representing a patient contained in the Patient Management System.
  *
- * @author Alessandro
+ * @author EL MAHDI ATMANI
  * @version 1.0
  */
 public class Patient {

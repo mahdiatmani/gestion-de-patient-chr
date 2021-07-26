@@ -8,7 +8,7 @@ import java.util.logging.SimpleFormatter;
 /**
  * Initialises a new Logger to be used by Patient Management System.
  *
- * @author Alessandro
+ * @author EL MAHDI ATMANI
  * @version 1.0
  */
 public class LoggerStartup {

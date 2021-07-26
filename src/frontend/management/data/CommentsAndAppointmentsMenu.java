@@ -20,7 +20,7 @@ import java.util.logging.Logger;
  * Creates the Comments and Appointments menu.
  * This menu contains all the comments and appointments of any given patient.
  *
- * @author Alessandro
+ * @author EL MAHDI ATMANI
  * @version 1.0
  */
 public class CommentsAndAppointmentsMenu extends JPanel {

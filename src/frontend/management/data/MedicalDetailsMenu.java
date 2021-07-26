@@ -35,7 +35,7 @@ import backend.Patient;
  * This menu contains a link to the medical condition of the patient and a series of images describing the patients condition.
  * Images can be both added and deleted.
  *
- * @author Alessandro
+ * @author EL MAHDI ATMANI
  * @version 1.0
  */
 public class MedicalDetailsMenu extends JPanel {

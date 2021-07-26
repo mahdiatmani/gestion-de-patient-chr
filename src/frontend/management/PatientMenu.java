@@ -24,7 +24,7 @@ import frontend.management.data.InformationMenu;
  * Creates the Patient menu where all the patients contained within the Patient Management System can be seen.
  * The Patient menu is composed of a split pane. The left pane contains a list of patients; the right pane contains a tabbed pane with the information of the selected patient.
  *
- * @author Alessandro
+ * @author EL MAHDI ATMANI
  * @version 1.0
  */
 public class PatientMenu extends JPanel {

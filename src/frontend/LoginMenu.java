@@ -30,7 +30,7 @@ import frontend.management.ManagementMenu;
  * An action listener detects if the username and password are the same as those contained in the practitioner class.
  * If that is the case then the main management menu is initialised.
  *
- * @author Alessandro
+ * @author EL MAHDI ATMANI
  * @version 1.0
  */
 

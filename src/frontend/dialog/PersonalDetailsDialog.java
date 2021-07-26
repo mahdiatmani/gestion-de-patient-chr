@@ -15,7 +15,7 @@ import backend.LoggerStartup;
  * Creates the layout to be used by the add and edit JOptionPanes opened from the Management menu.
  * This layout contains various text fields which the user can use to either add a new patient or modify an exisiting one.
  *
- * @author Alessandro
+ * @author EL MAHDI ATMANI
  * @version 1.0
  */
 public class PersonalDetailsDialog extends JPanel {

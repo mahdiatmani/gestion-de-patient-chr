@@ -30,7 +30,7 @@ import backend.Patient;
  * If the user is searching the list of patients it is only possible to select a single patient.
  * If the user is saving patients then multiple patients can be selected.
  *
- * @author Alessandro
+ * @author EL MAHDI ATMANI
  * @version 1.0
  */
 public class SearchDialog extends JPanel {

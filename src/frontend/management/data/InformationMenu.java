@@ -15,7 +15,7 @@ import backend.Patient;
  * Creates the Information menu responsible for displaying all the data of the selected patient.
  * The Information menu contains a tabbed pane with each tab displaying different information.
  *
- * @author Alessandro
+ * @author EL MAHDI ATMANI
  * @version 1.0
  */
 public class InformationMenu extends JPanel {

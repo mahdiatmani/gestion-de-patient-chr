@@ -25,7 +25,7 @@ import frontend.dialog.SearchDialog;
  * Whenever one of the options is chosen a different JOptionPane appears giving the users more options.
  * The Management menu also acts as the container for the Patient menu, where different patients can be chosen to see more details about them.
  *
- * @author Alessandro
+ * @author EL MAHDI ATMANI
  * @version 1.0
  */
 public class ManagementMenu extends JPanel {

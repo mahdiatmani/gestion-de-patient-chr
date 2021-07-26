@@ -20,7 +20,7 @@ import org.json.JSONTokener;
  * This class is responsible for saving and opening the data selected by the user.
  * All save files are written in JSON using the free third party library available at http://www.json.org/java/index.html.
  *
- * @author Alessandro
+ * @author EL MAHDI ATMANI
  * @version 1.0
  */
 public class JSONParser {
