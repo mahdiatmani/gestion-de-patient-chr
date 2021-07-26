@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 public class DatabaseConnection {
     //#######################################################################"
     /* pour entrer a la base de donner aller au https://freedb.tech/phpmyadmin
-      username : freedbtech_mahdiEL MAHDI ATMANI / password : Doha1599               */
+      username : freedbtech_mahdiatmani / password : Doha1599               */
     //#######################################################################"
     public static Connection connectionDuBd() throws ClassNotFoundException, SQLException {
 
