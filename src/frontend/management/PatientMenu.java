@@ -71,6 +71,7 @@ public class PatientMenu extends JPanel {
             patientList.add(patient);
             patientJListModel.addElement(patient);
             LOGGER.log(Level.INFO, "Adding New Patient");
+
         }
     }
 

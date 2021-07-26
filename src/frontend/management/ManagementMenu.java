@@ -69,7 +69,7 @@ public class ManagementMenu extends JPanel {
 
         });
 
-        LOGGER.log(Level.INFO, "Initialising Save To File Button");
+        LOGGER.log(Level.INFO, "Initialising Save To Data Base Button");
         JButton saveBtn = new JButton(new ImageIcon(getClass().getResource("/save.gif")));
         saveBtn.setToolTipText("Save Patient Register File");
         saveBtn.addActionListener(new ActionListener() {

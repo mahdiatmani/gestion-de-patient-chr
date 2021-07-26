@@ -5,7 +5,9 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -18,7 +20,7 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-import backend.DatabaseConnection;
+import backend.DataBase.DatabaseConnection;
 import backend.LoggerStartup;
 import backend.Practitioner;
 import frontend.management.ManagementMenu;
@@ -48,9 +50,9 @@ public class LoginMenu extends JPanel {
         this.frame = frame;
         /* Initialises the various JComponents of the Login menu. */
         LOGGER.log(Level.INFO, "Initialising Fields");
-        usernameField = new JTextField(10);
+        usernameField = new JTextField(20);
         usernameField.addActionListener(confirmAction);
-        passwordField = new JPasswordField(10);
+        passwordField = new JPasswordField(20);
         passwordField.addActionListener(confirmAction);
         JButton ok = new JButton("OK");
         ok.addActionListener(confirmAction);
@@ -87,8 +89,16 @@ public class LoginMenu extends JPanel {
             Practitioner practitioner = new Practitioner();
             LOGGER.log(Level.INFO, "Creating New Practitioner");
             LOGGER.log(Level.INFO, "Checking Credentials");
+          try {
+              DatabaseConnection connectNow = new DatabaseConnection();
+              Connection connectDB = connectNow.connectionDuBd();
+              String verifyLogin = "SELECT * FROM admin where username = '" + usernameField.getText() + "' and password = '" + passwordField.getText() + "'";
+              Statement st = connectDB.createStatement();
+              ResultSet rs = st.executeQuery(verifyLogin);
 
-            if (practitioner.getUsername().equals(usernameField.getText()) && Arrays.equals(practitioner.getPassword(), passwordField.getPassword())) {
+              if(rs.next()){
+
+            if (rs.getString("username").equals(usernameField.getText()) && rs.getString("password").equals(passwordField.getText())) {
                 LOGGER.log(Level.INFO, "Correct Crendentials Entered");
                 JOptionPane.showMessageDialog(frame, "Correct Username and Password Entered", "Correct Login", JOptionPane.INFORMATION_MESSAGE);
                 frame.getContentPane().removeAll();
@@ -100,6 +110,7 @@ public class LoginMenu extends JPanel {
                 frame.setMinimumSize(new Dimension(1024, 768));
                 frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
             }
+              }
             /* If the credentials are incorrect a warning is displayed and the text fields are reset. */
             else {
                 LOGGER.log(Level.INFO, "Incorrect Credentials Entered");
@@ -108,6 +119,11 @@ public class LoginMenu extends JPanel {
                 passwordField.setText("");
                 usernameField.grabFocus();
             }
+
+          }catch (Exception v){
+
+              v.printStackTrace();
+          }
         }
     };
 
