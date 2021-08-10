@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JToolBar;
 
+import backend.InfoPrinter;
 import backend.JSONParser;
 import backend.LoggerStartup;
 import backend.Patient;
@@ -95,6 +96,9 @@ public class ManagementMenu extends JPanel {
                     JSONParser json = new JSONParser();
                     LOGGER.log(Level.INFO, "Saving Patients To File");
                     json.save(filteredlist);
+                    InfoPrinter infoPrinter = new InfoPrinter();
+                    //infoPrinter.patientPdf();
+
                 }
             }
 
