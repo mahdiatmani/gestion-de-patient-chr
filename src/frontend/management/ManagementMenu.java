@@ -1,17 +1,13 @@
 package frontend.management;
 
-import java.awt.BorderLayout;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JToolBar;
+import javax.swing.*;
 
 import backend.InfoPrinter;
 import backend.JSONParser;
@@ -83,6 +79,32 @@ public class ManagementMenu extends JPanel {
             public void actionPerformed(ActionEvent arg0) {
                 LOGGER.log(Level.INFO, "Save To File Selected");
                 SearchDialog search = new SearchDialog(patientMenu.getPatients());
+
+                String[][] data = new String[patientMenu.getPatients().size()][10];
+                for (int i = 0; i < patientMenu.getPatients().size(); i++) {
+                    data[i][0] = patientMenu.getPatients().get(i).getFirstName();
+                    data[i][1] = patientMenu.getPatients().get(i).getLastName();
+                    data[i][2] = patientMenu.getPatients().get(i).getBirthday();
+                    data[i][3] = patientMenu.getPatients().get(i).getPhoneNumber();
+                    data[i][4] = String.valueOf(patientMenu.getPatients().get(i).getBilling());
+                    data[i][5] = patientMenu.getPatients().get(i).getPostcode();
+                    data[i][6] = patientMenu.getPatients().get(i).getCondition();
+                    data[i][7] = patientMenu.getPatients().get(i).getDoctor();
+                    data[i][8] = patientMenu.getPatients().get(i).getID();
+                    data[i][9] = patientMenu.getPatients().get(i).getConditionCIN();
+                    data[i][10] = patientMenu.getPatients().get(i).getProfilePicturePath();
+                    data[i][11] = patientMenu.getPatients().get(i).getComments();
+                    data[i][12] = patientMenu.getPatients().get(i).getAppointments();
+                    InfoPrinter infoPrinter = new InfoPrinter();
+                    //name    //lastname //billing  //l'anniv  //phone   //Condition //Docteur  //ID      //CIN
+                    infoPrinter.patientPdf(data[i][0],data[i][1],data[i][4],data[i][2],data[i][3],data[i][6],data[i][7],data[i][8],data[i][9],data[i][12]);
+
+                    //sql save
+
+                    //--------------------------------------------------------------
+                }
+
+
                 search.setSingleSelection(false);
                 int optionChosen = JOptionPane.showConfirmDialog(null, search, "Search Patient", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
                 if (optionChosen == JOptionPane.OK_OPTION) {
@@ -90,14 +112,15 @@ public class ManagementMenu extends JPanel {
                     list = patientMenu.getPatients();
                     ArrayList<Patient> filteredlist = new ArrayList<Patient>();
                     int[] selectedRows = search.getSelectedRows();
+
                     for (int i = 0; i < selectedRows.length; i++) {
                         filteredlist.add(list.get(selectedRows[i]));
                     }
+
                     JSONParser json = new JSONParser();
                     LOGGER.log(Level.INFO, "Saving Patients To File");
                     json.save(filteredlist);
-                    InfoPrinter infoPrinter = new InfoPrinter();
-                    //infoPrinter.patientPdf();
+
 
                 }
             }
@@ -119,7 +142,7 @@ public class ManagementMenu extends JPanel {
                     patientMenu.addToList(new Patient(personalDetailsDialog.getFirstName(), personalDetailsDialog.getLastName(), personalDetailsDialog.getBirthday(),
                             personalDetailsDialog.getPhoneNumber(), personalDetailsDialog.getStreetAddress(), personalDetailsDialog.getPostcode(),
                             personalDetailsDialog.getBilling(), personalDetailsDialog.getDoctor(), personalDetailsDialog.getMedicalCondition(),
-                            personalDetailsDialog.getMedicalURI()));
+                            personalDetailsDialog.getCIN()));
                     LOGGER.log(Level.INFO, "Patient Added To Management System");
                 }
             }
@@ -155,13 +178,13 @@ public class ManagementMenu extends JPanel {
                 if (patientMenu.getSelectedPatient() != null) {
                     Patient patient = patientMenu.getSelectedPatient();
                     personalDetailsDialog.setPatientData(patient.getFirstName(), patient.getLastName(), patient.getBirthday(), patient.getPhoneNumber(), patient.getStreetAddress(),
-                            patient.getPostcode(), patient.getBilling(), patient.getDoctor(), patient.getCondition(), patient.getConditionURI());
+                            patient.getPostcode(), patient.getBilling(), patient.getDoctor(), patient.getCondition(), patient.getConditionCIN());
                     int optionChosen = JOptionPane.showConfirmDialog(null, personalDetailsDialog, "Edit Patient", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
                     if (optionChosen == JOptionPane.OK_OPTION) {
                         patient.setData(personalDetailsDialog.getFirstName(), personalDetailsDialog.getLastName(), personalDetailsDialog.getBirthday(),
                                 personalDetailsDialog.getPhoneNumber(), personalDetailsDialog.getStreetAddress(), personalDetailsDialog.getPostcode(),
                                 personalDetailsDialog.getBilling(), personalDetailsDialog.getDoctor(), personalDetailsDialog.getMedicalCondition(),
-                                personalDetailsDialog.getMedicalURI());
+                                personalDetailsDialog.getCIN());
                         patientMenu.revalidatePatientMenu();
                         LOGGER.log(Level.INFO, "Patient Edited");
                     }

@@ -51,7 +51,6 @@ public class Launcher {
      * @param args No arguments required by the Launcher.
      */
     public static void main(String[] args) {
-
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {

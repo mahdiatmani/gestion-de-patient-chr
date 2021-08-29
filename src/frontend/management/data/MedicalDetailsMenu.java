@@ -62,7 +62,7 @@ public class MedicalDetailsMenu extends JPanel {
             @Override
             public void mouseClicked(MouseEvent arg0) {
                 try {
-                    Desktop.getDesktop().browse(new URI(patient.getConditionURI()));
+                    Desktop.getDesktop().browse(new URI(patient.getConditionCIN()));
                     LOGGER.log(Level.INFO, "Opening The Browser");
                 } catch (URISyntaxException e) {
                     JOptionPane.showMessageDialog(null, "URI Could Not Be Found", "Incorrect URI", JOptionPane.ERROR_MESSAGE);

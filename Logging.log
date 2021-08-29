@@ -1,14 +1,114 @@
-août 10, 2021 12:14:13 AM backend.LoggerStartup <init>
+août 29, 2021 11:21:08 PM backend.LoggerStartup <init>
 INFOS: Initialising Logger
-août 10, 2021 12:14:13 AM backend.Launcher$1 run
+août 29, 2021 11:21:08 PM backend.Launcher$1 run
 INFOS: Launching Application
-août 10, 2021 12:14:13 AM backend.Launcher <init>
+août 29, 2021 11:21:08 PM backend.Launcher <init>
 INFOS: Creating Application Frame
-août 10, 2021 12:14:13 AM backend.Launcher <init>
+août 29, 2021 11:21:08 PM backend.Launcher <init>
 INFOS: Initialising Login Menu
-août 10, 2021 12:14:13 AM frontend.LoginMenu <init>
+août 29, 2021 11:21:08 PM frontend.LoginMenu <init>
 INFOS: Initialising Fields
-août 10, 2021 12:14:13 AM frontend.LoginMenu <init>
+août 29, 2021 11:21:08 PM frontend.LoginMenu <init>
 INFOS: Adding Fields to the Login Panel
-août 10, 2021 12:14:14 AM backend.Launcher$1 run
+août 29, 2021 11:21:09 PM backend.Launcher$1 run
 INFOS: Application Successfully Launched
+août 29, 2021 11:21:14 PM backend.Practitioner <init>
+INFOS: Creating New Practitioner
+août 29, 2021 11:21:14 PM frontend.LoginMenu$2 actionPerformed
+INFOS: Creating New Practitioner
+août 29, 2021 11:21:14 PM frontend.LoginMenu$2 actionPerformed
+INFOS: Checking Credentials
+août 29, 2021 11:21:14 PM frontend.LoginMenu$2 actionPerformed
+INFOS: Correct Crendentials Entered
+août 29, 2021 11:21:15 PM frontend.LoginMenu$2 actionPerformed
+INFOS: Initialising Management Menu
+août 29, 2021 11:21:15 PM frontend.management.ManagementMenu <init>
+INFOS: Initialising Patient Menu
+août 29, 2021 11:21:15 PM frontend.management.PatientMenu <init>
+INFOS: Initialising Patient Menu Components
+août 29, 2021 11:21:15 PM frontend.management.PatientMenu <init>
+INFOS: Patient Menu Correctly Initialised
+août 29, 2021 11:21:15 PM frontend.management.ManagementMenu <init>
+INFOS: Adding Patient Menu to the Management Menu
+août 29, 2021 11:21:15 PM frontend.management.ManagementMenu <init>
+INFOS: Initialising Open File Button
+août 29, 2021 11:21:15 PM frontend.management.ManagementMenu <init>
+INFOS: Initialising Save To Data Base Button
+août 29, 2021 11:21:15 PM frontend.management.ManagementMenu <init>
+INFOS: Initialising Add Button
+août 29, 2021 11:21:15 PM frontend.management.ManagementMenu <init>
+INFOS: Initialising Toolbar
+août 29, 2021 11:21:15 PM frontend.management.ManagementMenu <init>
+INFOS: Adding Buttons to Toolbar
+août 29, 2021 11:21:15 PM frontend.management.ManagementMenu <init>
+INFOS: Adding Toolbar To Management Menu
+août 29, 2021 11:21:17 PM frontend.management.ManagementMenu$3 actionPerformed
+INFOS: Add Patient Selected
+août 29, 2021 11:21:17 PM frontend.dialog.PersonalDetailsDialog <init>
+INFOS: Initialising Personal Details Dialog
+août 29, 2021 11:21:21 PM frontend.dialog.PersonalDetailsDialog getBilling
+AVERTISSEMENT: The Billing String Could Not Be Converted To A Number
+août 29, 2021 11:21:21 PM backend.Patient <init>
+INFOS: Creating A New Patient
+août 29, 2021 11:21:21 PM frontend.management.PatientMenu addToList
+INFOS: Creating New List Of Patients
+août 29, 2021 11:21:21 PM frontend.management.PatientMenu addToList
+INFOS: Adding New Patient
+août 29, 2021 11:21:21 PM frontend.management.ManagementMenu$3 actionPerformed
+INFOS: Patient Added To Management System
+août 29, 2021 11:21:22 PM frontend.management.ManagementMenu$3 actionPerformed
+INFOS: Add Patient Selected
+août 29, 2021 11:21:22 PM frontend.dialog.PersonalDetailsDialog <init>
+INFOS: Initialising Personal Details Dialog
+août 29, 2021 11:21:26 PM frontend.dialog.PersonalDetailsDialog getBilling
+AVERTISSEMENT: The Billing String Could Not Be Converted To A Number
+août 29, 2021 11:21:26 PM backend.Patient <init>
+INFOS: Creating A New Patient
+août 29, 2021 11:21:26 PM frontend.management.PatientMenu addToList
+INFOS: Adding New Patient
+août 29, 2021 11:21:26 PM frontend.management.ManagementMenu$3 actionPerformed
+INFOS: Patient Added To Management System
+août 29, 2021 11:21:27 PM frontend.management.ManagementMenu$3 actionPerformed
+INFOS: Add Patient Selected
+août 29, 2021 11:21:27 PM frontend.dialog.PersonalDetailsDialog <init>
+INFOS: Initialising Personal Details Dialog
+août 29, 2021 11:21:33 PM frontend.dialog.PersonalDetailsDialog getBilling
+AVERTISSEMENT: The Billing String Could Not Be Converted To A Number
+août 29, 2021 11:21:33 PM backend.Patient <init>
+INFOS: Creating A New Patient
+août 29, 2021 11:21:33 PM frontend.management.PatientMenu addToList
+INFOS: Adding New Patient
+août 29, 2021 11:21:33 PM frontend.management.ManagementMenu$3 actionPerformed
+INFOS: Patient Added To Management System
+août 29, 2021 11:21:33 PM frontend.management.PatientMenu$1 valueChanged
+INFOS: Patient Selected
+août 29, 2021 11:21:33 PM frontend.management.data.InformationMenu <init>
+INFOS: Initialising Information Menu
+août 29, 2021 11:21:33 PM frontend.management.data.PersonalDetailsMenu <init>
+INFOS: Initialising Personal Details Menu
+août 29, 2021 11:21:33 PM frontend.management.data.MedicalDetailsMenu <init>
+INFOS: Initialising Medical Details Menu
+août 29, 2021 11:21:34 PM frontend.management.data.CommentsAndAppointmentsMenu <init>
+INFOS: Initialising Comments And Appointments Menu
+août 29, 2021 11:21:34 PM frontend.management.PatientMenu$1 valueChanged
+INFOS: Patient Selected
+août 29, 2021 11:21:34 PM frontend.management.data.InformationMenu <init>
+INFOS: Initialising Information Menu
+août 29, 2021 11:21:34 PM frontend.management.data.PersonalDetailsMenu <init>
+INFOS: Initialising Personal Details Menu
+août 29, 2021 11:21:34 PM frontend.management.data.MedicalDetailsMenu <init>
+INFOS: Initialising Medical Details Menu
+août 29, 2021 11:21:34 PM frontend.management.data.CommentsAndAppointmentsMenu <init>
+INFOS: Initialising Comments And Appointments Menu
+août 29, 2021 11:21:34 PM frontend.management.ManagementMenu$2 actionPerformed
+INFOS: Save To File Selected
+août 29, 2021 11:21:34 PM frontend.dialog.SearchDialog <init>
+INFOS: Initialising Search Dialog
+août 29, 2021 11:21:34 PM frontend.dialog.SearchTableModel <init>
+INFOS: Initialising Search Table Model
+août 29, 2021 11:21:36 PM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Multiple Rows Selected
+août 29, 2021 11:21:36 PM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Multiple Rows Selected
+août 29, 2021 11:21:41 PM frontend.management.ManagementMenu$2 actionPerformed
+INFOS: Saving Patients To File

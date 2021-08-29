@@ -27,7 +27,7 @@ public class PersonalDetailsDialog extends JPanel {
     private JTextField streetAddress;
     private JTextField postcode;
     private JTextField medicalCondition;
-    private JTextField medicalURI;
+    private JTextField CIN;
     private JTextField doctor;
     private JTextField billing;
     private final static Logger LOGGER = Logger.getLogger(LoggerStartup.class.getName());
@@ -46,7 +46,7 @@ public class PersonalDetailsDialog extends JPanel {
         billing = new JTextField(10);
         doctor = new JTextField(10);
         medicalCondition = new JTextField(10);
-        medicalURI = new JTextField(10);
+        CIN = new JTextField(10);
 
         setLayout(new GridBagLayout());
         GridBagConstraints cDetails = new GridBagConstraints();
@@ -123,7 +123,7 @@ public class PersonalDetailsDialog extends JPanel {
         add(new JLabel("Medical URL: "), cDetails);
         cDetails.gridx = 3;
         cDetails.fill = GridBagConstraints.HORIZONTAL;
-        add(medicalURI, cDetails);
+        add(CIN, cDetails);
     }
 
     /**
@@ -215,12 +215,12 @@ public class PersonalDetailsDialog extends JPanel {
     }
 
     /**
-     * Gets the medical URI of a patient's condition.
+     * Gets the CIN of a patient's condition.
      *
-     * @return The medical URI of a patient's condition.
+     * @return The CIN of a patient's condition.
      */
-    public String getMedicalURI() {
-        return medicalURI.getText();
+    public String getCIN() {
+        return CIN.getText();
     }
 
     /**
@@ -235,10 +235,10 @@ public class PersonalDetailsDialog extends JPanel {
      * @param billing          The current billing of a patient.
      * @param doctor           The doctor of a patient.
      * @param medicalCondition The medical condition of a patient.
-     * @param medicalURI       The medical URI of a patient's condition.
+     * @param CIN                The CIN of a patient's condition.
      */
     public void setPatientData(String firstName, String lastName, String birthday, String phoneNumber, String streetAddress,
-                               String postcode, double billing, String doctor, String medicalCondition, String medicalURI) {
+                               String postcode, double billing, String doctor, String medicalCondition, String CIN) {
         this.firstName.setText(firstName);
         this.lastName.setText(lastName);
         this.birthday.setText(birthday);
@@ -248,7 +248,7 @@ public class PersonalDetailsDialog extends JPanel {
         this.billing.setText(String.valueOf(billing));
         this.doctor.setText(doctor);
         this.medicalCondition.setText(medicalCondition);
-        this.medicalURI.setText(medicalURI);
+        this.CIN.setText(CIN);
     }
 
 }

@@ -22,7 +22,7 @@ public class Patient {
     private double billing;
     private String doctor;
     private String medicalCondition;
-    private String medicalURI;
+    private String CIN;
     private String ID;
     private String profilePicturePath;
     private ArrayList<String> conditionImage;
@@ -42,10 +42,10 @@ public class Patient {
      * @param billing          The current billing of a patient.
      * @param doctor           The doctor of a patient.
      * @param medicalCondition The medical condition of a patient.
-     * @param medicalURI       The medical URI of a patient.
+     * @param CIN              The CIN of a patient.
      */
     public Patient(String firstName, String lastName, String birthday, String phoneNumber, String streetAddress,
-                   String postcode, double billing, String doctor, String medicalCondition, String medicalURI) {
+                   String postcode, double billing, String doctor, String medicalCondition, String CIN) {
         LOGGER.log(Level.INFO, "Creating A New Patient");
         this.firstName = firstName;
         this.lastName = lastName;
@@ -56,7 +56,7 @@ public class Patient {
         this.billing = billing;
         this.doctor = doctor;
         this.medicalCondition = medicalCondition;
-        this.medicalURI = medicalURI;
+        this.CIN = CIN;
         this.ID = UUID.randomUUID().toString();
         this.profilePicturePath = "";
         this.conditionImage = new ArrayList<String>();
@@ -76,7 +76,7 @@ public class Patient {
      * @param billing            The current billing of a patient.
      * @param doctor             The doctor of a patient.
      * @param medicalCondition   The medical condition of a patient.
-     * @param medicalURI         The medical URI of a patient.
+     * @param CIN                The CIN of a patient.
      * @param ID                 The ID of a patient.
      * @param profilePicturePath The profile picture path of a patient.
      * @param conditionImage     The array containing all the medical picture paths of a patient.
@@ -84,7 +84,7 @@ public class Patient {
      * @param appointments       The appointments of a patient.
      */
     public Patient(String firstName, String lastName, String birthday, String phoneNumber, String streetAddress,
-                   String postcode, double billing, String doctor, String medicalCondition, String medicalURI,
+                   String postcode, double billing, String doctor, String medicalCondition, String CIN,
                    String ID, String profilePicturePath, ArrayList<String> conditionImage, String comments, String appointments) {
         LOGGER.log(Level.INFO, "Creating A New Patient");
         this.firstName = firstName;
@@ -96,7 +96,7 @@ public class Patient {
         this.billing = billing;
         this.doctor = doctor;
         this.medicalCondition = medicalCondition;
-        this.medicalURI = medicalURI;
+        this.CIN = CIN;
         this.ID = ID;
         this.profilePicturePath = profilePicturePath;
         this.conditionImage = conditionImage;
@@ -186,12 +186,12 @@ public class Patient {
     }
 
     /**
-     * Get the medical URI of a patient's condition.
+     * Get the CIN of a patient's condition.
      *
-     * @return The medical URI of a patient's condition.
+     * @return The medical CIN of a patient's condition.
      */
-    public String getConditionURI() {
-        return medicalURI;
+    public String getConditionCIN() {
+        return CIN;
     }
 
     /**
@@ -215,10 +215,10 @@ public class Patient {
      * @param billing          The current billing of a patient.
      * @param doctor           The doctor of a patient.
      * @param medicalCondition The medical condition of a patient.
-     * @param medicalURI       The medical URI of a patient's condition.
+     * @param CIN              The  CIN of a patient's condition.
      */
     public void setData(String firstName, String lastName, String birthday, String phoneNumber, String streetAddress,
-                        String postcode, double billing, String doctor, String medicalCondition, String medicalURI) {
+                        String postcode, double billing, String doctor, String medicalCondition, String CIN) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthday = birthday;
@@ -228,7 +228,7 @@ public class Patient {
         this.billing = billing;
         this.doctor = doctor;
         this.medicalCondition = medicalCondition;
-        this.medicalURI = medicalURI;
+        this.CIN = CIN;
     }
 
     /**

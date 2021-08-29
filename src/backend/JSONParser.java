@@ -50,7 +50,7 @@ public class JSONParser {
                     json.put("Street Address", p.getStreetAddress());
                     json.put("Postcode", p.getPostcode());
                     json.put("Medical Condition", p.getCondition());
-                    json.put("Medical URI", p.getConditionURI());
+                    json.put("Medical URI", p.getConditionCIN());
                     json.put("Comments", p.getComments());
                     json.put("Appointments", p.getAppointments());
                     json.put("Doctor", p.getDoctor());

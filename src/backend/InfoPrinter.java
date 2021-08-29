@@ -20,11 +20,11 @@ import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
 
 public class InfoPrinter {
-
-    public void patientPdf(String nom,String prenom,String code,String cin,String condition,String doctore,String billing){
+        static int i =1;
+    public void patientPdf(String name,String lastname,String billing,String birth,String Phone,String Condition,String doctore,String id, String CIN,String appoint){
         Document document = new Document();
         try{
-            PdfWriter writer  = PdfWriter.getInstance(document,new FileOutputStream(nom+"_"+code+".pdf"));
+            PdfWriter writer  = PdfWriter.getInstance(document,new FileOutputStream(name+"_"+id+".pdf"));
             document.open();
             //fonts
             // PdfFont font = PdfFontFactory.createFont(FontConstants.TIMES_BOLD);
@@ -48,7 +48,7 @@ public class InfoPrinter {
             table.setSpacingBefore(11f);
             float[] colWidth={2f};
             table.setWidths(colWidth);
-            PdfPCell c1 = new PdfPCell(new Paragraph("Code de patient :  "+code));
+            PdfPCell c1 = new PdfPCell(new Paragraph("Code de patient :  "+id));
             table.addCell(c1);
             document.add(table);
 
@@ -67,10 +67,10 @@ public class InfoPrinter {
             PdfPTable table2 = new PdfPTable(2);
             table2.setWidthPercentage(105);
             Paragraph paragraph = new Paragraph();
-            paragraph.add("\nIndex Patient :"+code);
-            paragraph.add("\n\nNom et Prénom : "+nom+" "+prenom);
-            paragraph.add("\n\nCIN : "+cin);
-            paragraph.add("\n\nCondition : "+condition +"\n\n");
+            paragraph.add("\nIndex Patient : "+i++);
+            paragraph.add("\n\nNom et Prénom : "+name+" "+lastname);
+            paragraph.add("\n\nCIN : "+CIN);
+            paragraph.add("\n\nCondition : "+Condition+"\n\n");
             float[] colWidth2={2f,2f};
             table2.setWidths(colWidth2);
             PdfPCell c22 = new PdfPCell(paragraph);
@@ -87,8 +87,8 @@ public class InfoPrinter {
             table3.setWidthPercentage(105);
             float[] colWidth3={2f,2f};
             table3.setWidths(colWidth3);
-            PdfPCell c31 = new PdfPCell(new Paragraph("Doctore :"+doctore));
-            PdfPCell c32 = new PdfPCell(new Paragraph("Date de rendez-vous :"));
+            PdfPCell c31 = new PdfPCell(new Paragraph("Doctore : "+doctore));
+            PdfPCell c32 = new PdfPCell(new Paragraph("Date de rendez-vous : "+ appoint));
             table3.addCell(c31);
             table3.addCell(c32);
             document.add(table3);
@@ -102,7 +102,7 @@ public class InfoPrinter {
 
             //open the file
             TimeUnit.SECONDS.sleep(3);
-            File myFile = new File(nom+"_"+code+".pdf");
+            File myFile = new File(name+"_"+id+".pdf");
             Desktop.getDesktop().open(myFile);
         }catch (Exception e){
             e.printStackTrace();
