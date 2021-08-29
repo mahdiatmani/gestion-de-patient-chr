@@ -120,7 +120,7 @@ public class PersonalDetailsDialog extends JPanel {
 
         cDetails.fill = GridBagConstraints.NONE;
         cDetails.gridx = 2;
-        add(new JLabel("Medical URL: "), cDetails);
+        add(new JLabel("CIN : "), cDetails);
         cDetails.gridx = 3;
         cDetails.fill = GridBagConstraints.HORIZONTAL;
         add(CIN, cDetails);

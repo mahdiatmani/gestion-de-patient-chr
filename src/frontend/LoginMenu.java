@@ -92,7 +92,7 @@ public class LoginMenu extends JPanel {
           try {
               DatabaseConnection connectNow = new DatabaseConnection();
               Connection connectDB = connectNow.connectionDuBd();
-              String verifyLogin = "SELECT * FROM admin where username = '" + usernameField.getText() + "' and password = '" + passwordField.getText() + "'";
+              String verifyLogin = "SELECT * FROM admins where username = '" + usernameField.getText() + "' and password = '" + passwordField.getText() + "'";
               Statement st = connectDB.createStatement();
               ResultSet rs = st.executeQuery(verifyLogin);
 

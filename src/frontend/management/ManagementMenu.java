@@ -3,12 +3,16 @@ package frontend.management;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javax.swing.*;
 
+import backend.DataBase.DatabaseConnection;
 import backend.InfoPrinter;
 import backend.JSONParser;
 import backend.LoggerStartup;
@@ -80,7 +84,7 @@ public class ManagementMenu extends JPanel {
                 LOGGER.log(Level.INFO, "Save To File Selected");
                 SearchDialog search = new SearchDialog(patientMenu.getPatients());
 
-                String[][] data = new String[patientMenu.getPatients().size()][10];
+                String[][] data = new String[patientMenu.getPatients().size()][15];
                 for (int i = 0; i < patientMenu.getPatients().size(); i++) {
                     data[i][0] = patientMenu.getPatients().get(i).getFirstName();
                     data[i][1] = patientMenu.getPatients().get(i).getLastName();
@@ -95,13 +99,30 @@ public class ManagementMenu extends JPanel {
                     data[i][10] = patientMenu.getPatients().get(i).getProfilePicturePath();
                     data[i][11] = patientMenu.getPatients().get(i).getComments();
                     data[i][12] = patientMenu.getPatients().get(i).getAppointments();
-                    InfoPrinter infoPrinter = new InfoPrinter();
-                    //name    //lastname //billing  //l'anniv  //phone   //Condition //Docteur  //ID      //CIN
-                    infoPrinter.patientPdf(data[i][0],data[i][1],data[i][4],data[i][2],data[i][3],data[i][6],data[i][7],data[i][8],data[i][9],data[i][12]);
+                    data[i][13] = patientMenu.getPatients().get(i).getStreetAddress();
+
+     InfoPrinter infoPrinter = new InfoPrinter();
+                            //name    //lastname //billing  //l'anniv  //phone   //Condition //Docteur  //ID      //CIN
+     infoPrinter.patientPdf(data[i][0],data[i][1],data[i][4],data[i][2],data[i][3],data[i][6],data[i][7],data[i][8],data[i][9],data[i][12]);
 
                     //sql save
+                    try {
+                        DatabaseConnection connectNow = new DatabaseConnection();
+                        Connection connectDB = connectNow.connectionDuBd();
+                        String savePatient = "INSERT INTO `patient` " +
+          "(`firstname`, `lastname`, `birthday`, `phone`, `street`, `CodePost`, `Doctor`, `billing`,`CIN`,`Condiction`) " +
+   "VALUES ('"+data[i][0]+"', '"+data[i][1]+"','"+data[i][2]+"','"+data[i][3]+"','"+data[i][13]+"','"+data[i][5]+"','"+data[i][7]+"','"+data[i][4]+"','"+data[i][9]+"','"+data[i][6]+"');";
 
-                    //--------------------------------------------------------------
+                        Statement st = connectDB.createStatement();
+                        st.executeUpdate(savePatient);
+
+          //save the comment and the appointment
+                        String savePatient_more_info = "INSERT INTO `patient_more_info` (`commentaire`, `appointment`) VALUES ('"+data[i][11]+"', '"+data[i][12]+"');";
+                        st.executeUpdate(savePatient_more_info);
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
+                        //--------------------------------------------------------------
                 }
 
 
@@ -120,11 +141,8 @@ public class ManagementMenu extends JPanel {
                     JSONParser json = new JSONParser();
                     LOGGER.log(Level.INFO, "Saving Patients To File");
                     json.save(filteredlist);
-
-
                 }
             }
-
         });
 
         LOGGER.log(Level.INFO, "Initialising Add Button");

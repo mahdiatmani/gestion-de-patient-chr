@@ -13,7 +13,7 @@ public class DatabaseConnection {
 
         Class.forName("com.mysql.cj.jdbc.Driver");
 
-        Connection databaseLink = DriverManager.getConnection("jdbc:mysql://localhost/gdp","root"
+        Connection databaseLink = DriverManager.getConnection("jdbc:mysql://localhost/chrdb","root"
                 ,"");
         return databaseLink;
 
