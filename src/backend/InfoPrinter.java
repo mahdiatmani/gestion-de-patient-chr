@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
 
 public class InfoPrinter {
         static int i =1;
-    public void patientPdf(String name,String lastname,String billing,String birth,String Phone,String Condition,String doctore,String id, String CIN,String appoint){
+    public void patientPdf(String name,String lastname,String billing,String birth,String Phone,String Condition,String doctore,String id, String CIN,String appoint,boolean paid){
         Document document = new Document();
         try{
             PdfWriter writer  = PdfWriter.getInstance(document,new FileOutputStream(name+"_"+id+".pdf"));
@@ -76,7 +76,12 @@ public class InfoPrinter {
             PdfPCell c22 = new PdfPCell(paragraph);
             Paragraph paragraph1 = new Paragraph();
             paragraph1.add("\nBillings : "+billing);
-            paragraph1.add("\n\n\nPAYANT/NON PAYANT :\n ");
+            if(!paid){
+                paragraph1.add("\n\n\nPAYANT/NON PAYANT :\n OUI" );
+            }else{
+                paragraph1.add("\n\n\nPAYANT/NON PAYANT :\n NON" );
+
+            }
             PdfPCell c23 = new PdfPCell(paragraph1);
             table2.addCell(c22);
             table2.addCell(c23);
@@ -101,7 +106,7 @@ public class InfoPrinter {
             writer.close();
 
             //open the file
-            TimeUnit.SECONDS.sleep(3);
+            TimeUnit.SECONDS.sleep(2);
             File myFile = new File(name+"_"+id+".pdf");
             Desktop.getDesktop().open(myFile);
         }catch (Exception e){

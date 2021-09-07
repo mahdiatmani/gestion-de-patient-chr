@@ -5,9 +5,7 @@ import java.awt.GridBagLayout;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
+import javax.swing.*;
 
 import backend.LoggerStartup;
 
@@ -28,6 +26,7 @@ public class PersonalDetailsDialog extends JPanel {
     private JTextField postcode;
     private JTextField medicalCondition;
     private JTextField CIN;
+    private JCheckBox paid;
     private JTextField doctor;
     private JTextField billing;
     private final static Logger LOGGER = Logger.getLogger(LoggerStartup.class.getName());
@@ -44,6 +43,7 @@ public class PersonalDetailsDialog extends JPanel {
         streetAddress = new JTextField(10);
         postcode = new JTextField(10);
         billing = new JTextField(10);
+        paid = new JCheckBox("paid");
         doctor = new JTextField(10);
         medicalCondition = new JTextField(10);
         CIN = new JTextField(10);
@@ -102,6 +102,11 @@ public class PersonalDetailsDialog extends JPanel {
         cDetails.gridx = 1;
         cDetails.fill = GridBagConstraints.HORIZONTAL;
         add(billing, cDetails);
+
+        cDetails.fill = GridBagConstraints.NONE;
+        cDetails.gridx = 4;
+        cDetails.fill = GridBagConstraints.HORIZONTAL;
+        add(paid, cDetails);
 
         cDetails.fill = GridBagConstraints.NONE;
         cDetails.gridx = 2;

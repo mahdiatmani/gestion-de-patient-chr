@@ -10,13 +10,7 @@ import java.awt.event.ActionListener;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFileChooser;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-import javax.swing.UIManager;
+import javax.swing.*;
 
 import backend.LoggerStartup;
 import backend.Patient;
@@ -186,8 +180,16 @@ public class PersonalDetailsMenu extends JPanel {
 
         cDetails.fill = GridBagConstraints.NONE;
         cDetails.gridx = 2;
-        details.add(new JLabel("Doctor: "), cDetails);
+        JCheckBox Checkbox = new JCheckBox("paid");
+        Checkbox.setSelected(!patient.isPaid());
+        Checkbox.setEnabled(false);
+        Checkbox.setHorizontalAlignment(JCheckBox.CENTER);
+        details.add(Checkbox, cDetails);
+
+        cDetails.fill = GridBagConstraints.NONE;
         cDetails.gridx = 3;
+        details.add(new JLabel("Doctor: "), cDetails);
+        cDetails.gridx = 4;
         cDetails.fill = GridBagConstraints.HORIZONTAL;
         JTextField doctor = new JTextField();
         doctor.setText(String.valueOf(patient.getDoctor()));

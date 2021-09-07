@@ -27,8 +27,17 @@ public class Patient {
     private String profilePicturePath;
     private ArrayList<String> conditionImage;
     private String comments;
+    boolean paid;
     private String appointments;
     private final static Logger LOGGER = Logger.getLogger(LoggerStartup.class.getName());
+
+    public boolean isPaid() {
+        return paid;
+    }
+
+    public void setPaid(boolean paid) {
+        this.paid = paid;
+    }
 
     /**
      * Initialises a patient with basic personal details.

@@ -15,6 +15,8 @@ import java.io.IOException;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.sql.Connection;
+import java.sql.Statement;
 import java.util.ListIterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -27,6 +29,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
 
+import backend.DataBase.DatabaseConnection;
 import backend.LoggerStartup;
 import backend.Patient;
 
@@ -54,7 +57,7 @@ public class MedicalDetailsMenu extends JPanel {
         setLayout(new GridBagLayout());
         GridBagConstraints cDetails = new GridBagConstraints();
         JLabel label = new JLabel(patient.getCondition(), JLabel.CENTER);
-        label.setForeground(Color.BLUE);
+        label.setForeground(Color.GREEN);
         label.setCursor(new Cursor(Cursor.HAND_CURSOR));
         label.addMouseListener(new MouseListener() {
 
@@ -155,6 +158,22 @@ public class MedicalDetailsMenu extends JPanel {
                 if (openFile.getSelectedFile() != null) {
                     LOGGER.log(Level.INFO, "Add Selected Image");
                     selectedImage = openFile.getSelectedFile().getPath();
+
+                    //save image path to data base
+
+                    try {
+                        DatabaseConnection connectNow = new DatabaseConnection();
+                        Connection connectDB = connectNow.connectionDuBd();
+                        Statement st = connectDB.createStatement();
+                        String saveImagePath = "INSERT INTO `medicaldetails` (`imagecondiction`) VALUES ('"+selectedImage+"');";
+                        st.executeUpdate(saveImagePath);
+                    }catch (Exception e){
+                        e.printStackTrace();
+                        System.out.println("image save in sql bad");
+                    }
+
+
+                    //----------------------------------------------------
                     patient.getConditionImage().add(selectedImage);
                     image.setText(null);
                     image.setIcon(new ImageIcon(selectedImage));

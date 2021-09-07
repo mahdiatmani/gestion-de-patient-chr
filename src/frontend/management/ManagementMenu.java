@@ -100,10 +100,11 @@ public class ManagementMenu extends JPanel {
                     data[i][11] = patientMenu.getPatients().get(i).getComments();
                     data[i][12] = patientMenu.getPatients().get(i).getAppointments();
                     data[i][13] = patientMenu.getPatients().get(i).getStreetAddress();
+                    boolean paid = patientMenu.getPatients().get(i).isPaid();
 
      InfoPrinter infoPrinter = new InfoPrinter();
                             //name    //lastname //billing  //l'anniv  //phone   //Condition //Docteur  //ID      //CIN
-     infoPrinter.patientPdf(data[i][0],data[i][1],data[i][4],data[i][2],data[i][3],data[i][6],data[i][7],data[i][8],data[i][9],data[i][12]);
+     infoPrinter.patientPdf(data[i][0],data[i][1],data[i][4],data[i][2],data[i][3],data[i][6],data[i][7],data[i][8],data[i][9],data[i][12],paid);
 
                     //sql save
                     try {
@@ -117,7 +118,7 @@ public class ManagementMenu extends JPanel {
                         st.executeUpdate(savePatient);
 
           //save the comment and the appointment
-                        String savePatient_more_info = "INSERT INTO `patient_more_info` (`commentaire`, `appointment`) VALUES ('"+data[i][11]+"', '"+data[i][12]+"');";
+                        String savePatient_more_info = "INSERT INTO `commentetappointment` (`comments`, `appointment`) VALUES ('"+data[i][11]+"', '"+data[i][12]+"');";
                         st.executeUpdate(savePatient_more_info);
                     }catch (Exception e){
                         e.printStackTrace();
