@@ -21,10 +21,10 @@ import java.util.concurrent.TimeUnit;
 
 public class InfoPrinter {
         static int i =1;
-    public void patientPdf(String name,String lastname,String billing,String birth,String Phone,String Condition,String doctore,String id, String CIN,String appoint,boolean paid){
+    public void patientPdf(String firstname,String lastname,String billing,String birth,String Phone,String Condition,String doctore,String id, String CIN,String appoint,boolean paid){
         Document document = new Document();
         try{
-            PdfWriter writer  = PdfWriter.getInstance(document,new FileOutputStream(name+"_"+id+".pdf"));
+            PdfWriter writer  = PdfWriter.getInstance(document,new FileOutputStream(firstname+"_"+lastname+".pdf"));
             document.open();
             //fonts
             // PdfFont font = PdfFontFactory.createFont(FontConstants.TIMES_BOLD);
@@ -68,14 +68,14 @@ public class InfoPrinter {
             table2.setWidthPercentage(105);
             Paragraph paragraph = new Paragraph();
             paragraph.add("\nIndex Patient : "+i++);
-            paragraph.add("\n\nNom et Prénom : "+name+" "+lastname);
+            paragraph.add("\n\nNom et Prénom : "+firstname+" "+lastname);
             paragraph.add("\n\nCIN : "+CIN);
             paragraph.add("\n\nCondition : "+Condition+"\n\n");
             float[] colWidth2={2f,2f};
             table2.setWidths(colWidth2);
             PdfPCell c22 = new PdfPCell(paragraph);
             Paragraph paragraph1 = new Paragraph();
-            paragraph1.add("\nBillings : "+billing);
+            paragraph1.add("\nMontant : "+billing);
             if(!paid){
                 paragraph1.add("\n\n\nPAYANT/NON PAYANT :\n OUI" );
             }else{
@@ -92,7 +92,7 @@ public class InfoPrinter {
             table3.setWidthPercentage(105);
             float[] colWidth3={2f,2f};
             table3.setWidths(colWidth3);
-            PdfPCell c31 = new PdfPCell(new Paragraph("Doctore : "+doctore));
+            PdfPCell c31 = new PdfPCell(new Paragraph("Docteur : "+doctore));
             PdfPCell c32 = new PdfPCell(new Paragraph("Date de rendez-vous : "+ appoint));
             table3.addCell(c31);
             table3.addCell(c32);
@@ -107,7 +107,7 @@ public class InfoPrinter {
 
             //open the file
             TimeUnit.SECONDS.sleep(2);
-            File myFile = new File(name+"_"+id+".pdf");
+            File myFile = new File(firstname+"_"+lastname+".pdf");
             Desktop.getDesktop().open(myFile);
         }catch (Exception e){
             e.printStackTrace();

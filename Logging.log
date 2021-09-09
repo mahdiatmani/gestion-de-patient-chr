@@ -1,80 +1,332 @@
-sept. 07, 2021 2:43:46 PM backend.LoggerStartup <init>
+sept. 09, 2021 9:39:01 AM backend.LoggerStartup <init>
 INFOS: Initialising Logger
-sept. 07, 2021 2:43:46 PM backend.Launcher$1 run
+sept. 09, 2021 9:39:01 AM backend.Launcher$1 run
 INFOS: Launching Application
-sept. 07, 2021 2:43:46 PM backend.Launcher <init>
+sept. 09, 2021 9:39:02 AM backend.Launcher <init>
 INFOS: Creating Application Frame
-sept. 07, 2021 2:43:47 PM backend.Launcher <init>
+sept. 09, 2021 9:39:02 AM backend.Launcher <init>
 INFOS: Initialising Login Menu
-sept. 07, 2021 2:43:47 PM frontend.LoginMenu <init>
+sept. 09, 2021 9:39:02 AM frontend.LoginMenu <init>
 INFOS: Initialising Fields
-sept. 07, 2021 2:43:47 PM frontend.LoginMenu <init>
+sept. 09, 2021 9:39:02 AM frontend.LoginMenu <init>
 INFOS: Adding Fields to the Login Panel
-sept. 07, 2021 2:43:47 PM backend.Launcher$1 run
+sept. 09, 2021 9:39:03 AM backend.Launcher$1 run
 INFOS: Application Successfully Launched
-sept. 07, 2021 2:43:52 PM backend.Practitioner <init>
+sept. 09, 2021 9:39:20 AM backend.Practitioner <init>
 INFOS: Creating New Practitioner
-sept. 07, 2021 2:43:52 PM frontend.LoginMenu$2 actionPerformed
+sept. 09, 2021 9:39:20 AM frontend.LoginMenu$2 actionPerformed
 INFOS: Creating New Practitioner
-sept. 07, 2021 2:43:52 PM frontend.LoginMenu$2 actionPerformed
+sept. 09, 2021 9:39:20 AM frontend.LoginMenu$2 actionPerformed
 INFOS: Checking Credentials
-sept. 07, 2021 2:43:52 PM frontend.LoginMenu$2 actionPerformed
+sept. 09, 2021 9:39:21 AM frontend.LoginMenu$2 actionPerformed
 INFOS: Correct Crendentials Entered
-sept. 07, 2021 2:43:53 PM frontend.LoginMenu$2 actionPerformed
+sept. 09, 2021 9:39:25 AM frontend.LoginMenu$2 actionPerformed
 INFOS: Initialising Management Menu
-sept. 07, 2021 2:43:53 PM frontend.management.ManagementMenu <init>
+sept. 09, 2021 9:39:25 AM frontend.management.ManagementMenu <init>
 INFOS: Initialising Patient Menu
-sept. 07, 2021 2:43:53 PM frontend.management.PatientMenu <init>
+sept. 09, 2021 9:39:25 AM frontend.management.PatientMenu <init>
 INFOS: Initialising Patient Menu Components
-sept. 07, 2021 2:43:54 PM frontend.management.PatientMenu <init>
+sept. 09, 2021 9:39:25 AM frontend.management.PatientMenu <init>
 INFOS: Patient Menu Correctly Initialised
-sept. 07, 2021 2:43:54 PM frontend.management.ManagementMenu <init>
+sept. 09, 2021 9:39:25 AM frontend.management.ManagementMenu <init>
 INFOS: Adding Patient Menu to the Management Menu
-sept. 07, 2021 2:43:54 PM frontend.management.ManagementMenu <init>
+sept. 09, 2021 9:39:25 AM frontend.management.ManagementMenu <init>
 INFOS: Initialising Open File Button
-sept. 07, 2021 2:43:54 PM frontend.management.ManagementMenu <init>
+sept. 09, 2021 9:39:25 AM frontend.management.ManagementMenu <init>
 INFOS: Initialising Save To Data Base Button
-sept. 07, 2021 2:43:54 PM frontend.management.ManagementMenu <init>
+sept. 09, 2021 9:39:25 AM frontend.management.ManagementMenu <init>
 INFOS: Initialising Add Button
-sept. 07, 2021 2:43:54 PM frontend.management.ManagementMenu <init>
+sept. 09, 2021 9:39:26 AM frontend.management.ManagementMenu <init>
 INFOS: Initialising Toolbar
-sept. 07, 2021 2:43:54 PM frontend.management.ManagementMenu <init>
+sept. 09, 2021 9:39:26 AM frontend.management.ManagementMenu <init>
 INFOS: Adding Buttons to Toolbar
-sept. 07, 2021 2:43:54 PM frontend.management.ManagementMenu <init>
+sept. 09, 2021 9:39:26 AM frontend.management.ManagementMenu <init>
 INFOS: Adding Toolbar To Management Menu
-sept. 07, 2021 2:43:55 PM frontend.management.ManagementMenu$3 actionPerformed
+sept. 09, 2021 9:39:55 AM frontend.management.ManagementMenu$3 actionPerformed
 INFOS: Add Patient Selected
-sept. 07, 2021 2:43:55 PM frontend.dialog.PersonalDetailsDialog <init>
+sept. 09, 2021 9:39:55 AM frontend.dialog.PersonalDetailsDialog <init>
 INFOS: Initialising Personal Details Dialog
-sept. 07, 2021 2:43:56 PM frontend.dialog.PersonalDetailsDialog getBilling
-AVERTISSEMENT: The Billing String Could Not Be Converted To A Number
-sept. 07, 2021 2:43:56 PM backend.Patient <init>
+sept. 09, 2021 9:40:56 AM backend.Patient <init>
 INFOS: Creating A New Patient
-sept. 07, 2021 2:43:57 PM frontend.management.PatientMenu addToList
+sept. 09, 2021 9:40:57 AM frontend.management.PatientMenu addToList
 INFOS: Creating New List Of Patients
-sept. 07, 2021 2:43:57 PM frontend.management.PatientMenu addToList
+sept. 09, 2021 9:40:57 AM frontend.management.PatientMenu addToList
 INFOS: Adding New Patient
-sept. 07, 2021 2:43:57 PM frontend.management.ManagementMenu$3 actionPerformed
+sept. 09, 2021 9:40:57 AM frontend.management.ManagementMenu$3 actionPerformed
 INFOS: Patient Added To Management System
-sept. 07, 2021 2:43:58 PM frontend.management.PatientMenu$1 valueChanged
+sept. 09, 2021 9:41:00 AM frontend.management.PatientMenu$1 valueChanged
 INFOS: Patient Selected
-sept. 07, 2021 2:43:58 PM frontend.management.data.InformationMenu <init>
+sept. 09, 2021 9:41:00 AM frontend.management.data.InformationMenu <init>
 INFOS: Initialising Information Menu
-sept. 07, 2021 2:43:58 PM frontend.management.data.PersonalDetailsMenu <init>
+sept. 09, 2021 9:41:00 AM frontend.management.data.PersonalDetailsMenu <init>
 INFOS: Initialising Personal Details Menu
-sept. 07, 2021 2:43:59 PM frontend.management.data.MedicalDetailsMenu <init>
+sept. 09, 2021 9:41:00 AM frontend.management.data.MedicalDetailsMenu <init>
 INFOS: Initialising Medical Details Menu
-sept. 07, 2021 2:43:59 PM frontend.management.data.CommentsAndAppointmentsMenu <init>
+sept. 09, 2021 9:41:00 AM frontend.management.data.CommentsAndAppointmentsMenu <init>
 INFOS: Initialising Comments And Appointments Menu
-sept. 07, 2021 2:43:59 PM frontend.management.PatientMenu$1 valueChanged
+sept. 09, 2021 9:41:00 AM frontend.management.PatientMenu$1 valueChanged
 INFOS: Patient Selected
-sept. 07, 2021 2:43:59 PM frontend.management.data.InformationMenu <init>
+sept. 09, 2021 9:41:00 AM frontend.management.data.InformationMenu <init>
 INFOS: Initialising Information Menu
-sept. 07, 2021 2:43:59 PM frontend.management.data.PersonalDetailsMenu <init>
+sept. 09, 2021 9:41:00 AM frontend.management.data.PersonalDetailsMenu <init>
 INFOS: Initialising Personal Details Menu
-sept. 07, 2021 2:43:59 PM frontend.management.data.MedicalDetailsMenu <init>
+sept. 09, 2021 9:41:00 AM frontend.management.data.MedicalDetailsMenu <init>
 INFOS: Initialising Medical Details Menu
-sept. 07, 2021 2:43:59 PM frontend.management.data.CommentsAndAppointmentsMenu <init>
+sept. 09, 2021 9:41:00 AM frontend.management.data.CommentsAndAppointmentsMenu <init>
 INFOS: Initialising Comments And Appointments Menu
-sept. 07, 2021 2:44:16 PM frontend.management.data.MedicalDetailsMenu$3 actionPerformed
+sept. 09, 2021 9:41:04 AM frontend.management.data.PersonalDetailsMenu$1 actionPerformed
+INFOS: Add Image Selected
+sept. 09, 2021 9:41:12 AM frontend.management.data.PersonalDetailsMenu$1 actionPerformed
+INFOS: Image Added
+sept. 09, 2021 9:41:36 AM frontend.management.data.MedicalDetailsMenu$3 actionPerformed
 INFOS: Add Selected Image
+sept. 09, 2021 9:41:45 AM frontend.management.data.MedicalDetailsMenu$3 actionPerformed
+INFOS: Add Selected Image
+sept. 09, 2021 9:41:47 AM frontend.management.data.MedicalDetailsMenu$2 actionPerformed
+INFOS: Go To Previous Image
+sept. 09, 2021 9:41:47 AM frontend.management.data.MedicalDetailsMenu$5 actionPerformed
+INFOS: Go To Next Image
+sept. 09, 2021 9:41:54 AM frontend.management.data.MedicalDetailsMenu$3 actionPerformed
+INFOS: Add Selected Image
+sept. 09, 2021 9:41:55 AM frontend.management.data.MedicalDetailsMenu$5 actionPerformed
+INFOS: Go To Next Image
+sept. 09, 2021 9:41:56 AM frontend.management.data.MedicalDetailsMenu$2 actionPerformed
+INFOS: Go To Previous Image
+sept. 09, 2021 9:41:57 AM frontend.management.data.MedicalDetailsMenu$5 actionPerformed
+INFOS: Go To Next Image
+sept. 09, 2021 9:41:58 AM frontend.management.data.MedicalDetailsMenu$2 actionPerformed
+INFOS: Go To Previous Image
+sept. 09, 2021 9:41:59 AM frontend.management.data.MedicalDetailsMenu$5 actionPerformed
+INFOS: Go To Next Image
+sept. 09, 2021 9:42:00 AM frontend.management.data.MedicalDetailsMenu$2 actionPerformed
+INFOS: Go To Previous Image
+sept. 09, 2021 9:42:00 AM frontend.management.data.MedicalDetailsMenu$2 actionPerformed
+INFOS: Go To Previous Image
+sept. 09, 2021 9:42:00 AM frontend.management.data.MedicalDetailsMenu$2 actionPerformed
+INFOS: Go To Previous Image
+sept. 09, 2021 9:42:01 AM frontend.management.data.MedicalDetailsMenu$5 actionPerformed
+INFOS: Go To Next Image
+sept. 09, 2021 9:42:01 AM frontend.management.data.MedicalDetailsMenu$5 actionPerformed
+INFOS: Go To Next Image
+sept. 09, 2021 9:42:01 AM frontend.management.data.MedicalDetailsMenu$5 actionPerformed
+INFOS: Go To Next Image
+sept. 09, 2021 9:42:39 AM frontend.management.ManagementMenu$5 actionPerformed
+INFOS: Edit Patient Selected
+sept. 09, 2021 9:42:39 AM frontend.dialog.PersonalDetailsDialog <init>
+INFOS: Initialising Personal Details Dialog
+sept. 09, 2021 9:42:45 AM frontend.management.data.InformationMenu <init>
+INFOS: Initialising Information Menu
+sept. 09, 2021 9:42:45 AM frontend.management.data.PersonalDetailsMenu <init>
+INFOS: Initialising Personal Details Menu
+sept. 09, 2021 9:42:45 AM frontend.management.data.MedicalDetailsMenu <init>
+INFOS: Initialising Medical Details Menu
+sept. 09, 2021 9:42:45 AM frontend.management.data.CommentsAndAppointmentsMenu <init>
+INFOS: Initialising Comments And Appointments Menu
+sept. 09, 2021 9:42:45 AM frontend.management.ManagementMenu$5 actionPerformed
+INFOS: Patient Edited
+sept. 09, 2021 9:42:50 AM frontend.management.ManagementMenu$3 actionPerformed
+INFOS: Add Patient Selected
+sept. 09, 2021 9:42:50 AM frontend.dialog.PersonalDetailsDialog <init>
+INFOS: Initialising Personal Details Dialog
+sept. 09, 2021 9:43:38 AM backend.Patient <init>
+INFOS: Creating A New Patient
+sept. 09, 2021 9:43:38 AM frontend.management.PatientMenu addToList
+INFOS: Adding New Patient
+sept. 09, 2021 9:43:38 AM frontend.management.ManagementMenu$3 actionPerformed
+INFOS: Patient Added To Management System
+sept. 09, 2021 9:43:42 AM frontend.management.ManagementMenu$6 actionPerformed
+INFOS: Search Patient Selected
+sept. 09, 2021 9:43:42 AM frontend.dialog.SearchDialog <init>
+INFOS: Initialising Search Dialog
+sept. 09, 2021 9:43:42 AM frontend.dialog.SearchTableModel <init>
+INFOS: Initialising Search Table Model
+sept. 09, 2021 9:44:05 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:05 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:06 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:06 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:06 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:06 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:06 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:06 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:07 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:07 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:07 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:07 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:07 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:07 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:07 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:08 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:08 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:08 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:08 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:08 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:09 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:09 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:09 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:09 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:09 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:09 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:10 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:10 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:10 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:15 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:15 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Single Row Selected
+sept. 09, 2021 9:44:16 AM frontend.management.PatientMenu$1 valueChanged
+INFOS: Patient Selected
+sept. 09, 2021 9:44:16 AM frontend.management.data.InformationMenu <init>
+INFOS: Initialising Information Menu
+sept. 09, 2021 9:44:16 AM frontend.management.data.PersonalDetailsMenu <init>
+INFOS: Initialising Personal Details Menu
+sept. 09, 2021 9:44:16 AM frontend.management.data.MedicalDetailsMenu <init>
+INFOS: Initialising Medical Details Menu
+sept. 09, 2021 9:44:16 AM frontend.management.data.CommentsAndAppointmentsMenu <init>
+INFOS: Initialising Comments And Appointments Menu
+sept. 09, 2021 9:44:16 AM frontend.management.ManagementMenu$6 actionPerformed
+INFOS: Patient Selected
+sept. 09, 2021 9:44:20 AM frontend.management.PatientMenu$1 valueChanged
+INFOS: Patient Selected
+sept. 09, 2021 9:44:20 AM frontend.management.data.InformationMenu <init>
+INFOS: Initialising Information Menu
+sept. 09, 2021 9:44:20 AM frontend.management.data.PersonalDetailsMenu <init>
+INFOS: Initialising Personal Details Menu
+sept. 09, 2021 9:44:20 AM frontend.management.data.MedicalDetailsMenu <init>
+INFOS: Initialising Medical Details Menu
+sept. 09, 2021 9:44:20 AM frontend.management.data.CommentsAndAppointmentsMenu <init>
+INFOS: Initialising Comments And Appointments Menu
+sept. 09, 2021 9:44:20 AM frontend.management.PatientMenu$1 valueChanged
+INFOS: Patient Selected
+sept. 09, 2021 9:44:20 AM frontend.management.data.InformationMenu <init>
+INFOS: Initialising Information Menu
+sept. 09, 2021 9:44:20 AM frontend.management.data.PersonalDetailsMenu <init>
+INFOS: Initialising Personal Details Menu
+sept. 09, 2021 9:44:20 AM frontend.management.data.MedicalDetailsMenu <init>
+INFOS: Initialising Medical Details Menu
+sept. 09, 2021 9:44:20 AM frontend.management.data.CommentsAndAppointmentsMenu <init>
+INFOS: Initialising Comments And Appointments Menu
+sept. 09, 2021 9:44:21 AM frontend.management.PatientMenu$1 valueChanged
+INFOS: Patient Selected
+sept. 09, 2021 9:44:21 AM frontend.management.data.InformationMenu <init>
+INFOS: Initialising Information Menu
+sept. 09, 2021 9:44:21 AM frontend.management.data.PersonalDetailsMenu <init>
+INFOS: Initialising Personal Details Menu
+sept. 09, 2021 9:44:21 AM frontend.management.data.MedicalDetailsMenu <init>
+INFOS: Initialising Medical Details Menu
+sept. 09, 2021 9:44:21 AM frontend.management.data.CommentsAndAppointmentsMenu <init>
+INFOS: Initialising Comments And Appointments Menu
+sept. 09, 2021 9:44:21 AM frontend.management.PatientMenu$1 valueChanged
+INFOS: Patient Selected
+sept. 09, 2021 9:44:21 AM frontend.management.data.InformationMenu <init>
+INFOS: Initialising Information Menu
+sept. 09, 2021 9:44:21 AM frontend.management.data.PersonalDetailsMenu <init>
+INFOS: Initialising Personal Details Menu
+sept. 09, 2021 9:44:21 AM frontend.management.data.MedicalDetailsMenu <init>
+INFOS: Initialising Medical Details Menu
+sept. 09, 2021 9:44:21 AM frontend.management.data.CommentsAndAppointmentsMenu <init>
+INFOS: Initialising Comments And Appointments Menu
+sept. 09, 2021 9:44:25 AM frontend.management.ManagementMenu$4 actionPerformed
+INFOS: Delete Patient Selected
+sept. 09, 2021 9:44:26 AM frontend.management.PatientMenu removeFromList
+INFOS: Removing Patient
+sept. 09, 2021 9:44:26 AM frontend.management.ManagementMenu$4 actionPerformed
+INFOS: Patient Deleted From Management System
+sept. 09, 2021 9:44:29 AM frontend.management.PatientMenu$1 valueChanged
+INFOS: Patient Selected
+sept. 09, 2021 9:44:29 AM frontend.management.data.InformationMenu <init>
+INFOS: Initialising Information Menu
+sept. 09, 2021 9:44:29 AM frontend.management.data.PersonalDetailsMenu <init>
+INFOS: Initialising Personal Details Menu
+sept. 09, 2021 9:44:29 AM frontend.management.data.MedicalDetailsMenu <init>
+INFOS: Initialising Medical Details Menu
+sept. 09, 2021 9:44:29 AM frontend.management.data.CommentsAndAppointmentsMenu <init>
+INFOS: Initialising Comments And Appointments Menu
+sept. 09, 2021 9:44:30 AM frontend.management.PatientMenu$1 valueChanged
+INFOS: Patient Selected
+sept. 09, 2021 9:44:30 AM frontend.management.data.InformationMenu <init>
+INFOS: Initialising Information Menu
+sept. 09, 2021 9:44:30 AM frontend.management.data.PersonalDetailsMenu <init>
+INFOS: Initialising Personal Details Menu
+sept. 09, 2021 9:44:30 AM frontend.management.data.MedicalDetailsMenu <init>
+INFOS: Initialising Medical Details Menu
+sept. 09, 2021 9:44:30 AM frontend.management.data.CommentsAndAppointmentsMenu <init>
+INFOS: Initialising Comments And Appointments Menu
+sept. 09, 2021 9:44:37 AM frontend.management.ManagementMenu$2 actionPerformed
+INFOS: Save To File Selected
+sept. 09, 2021 9:44:37 AM frontend.dialog.SearchDialog <init>
+INFOS: Initialising Search Dialog
+sept. 09, 2021 9:44:37 AM frontend.dialog.SearchTableModel <init>
+INFOS: Initialising Search Table Model
+sept. 09, 2021 9:45:08 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Multiple Rows Selected
+sept. 09, 2021 9:45:09 AM frontend.dialog.SearchDialog$1 valueChanged
+INFOS: Multiple Rows Selected
+sept. 09, 2021 9:45:14 AM frontend.management.ManagementMenu$2 actionPerformed
+INFOS: Saving Patients To File
+sept. 09, 2021 9:45:30 AM backend.JSONParser save
+INFOS: Saving Patients
+sept. 09, 2021 9:45:32 AM frontend.management.ManagementMenu$4 actionPerformed
+INFOS: Delete Patient Selected
+sept. 09, 2021 9:45:34 AM frontend.management.PatientMenu removeFromList
+INFOS: Removing Patient
+sept. 09, 2021 9:45:34 AM frontend.management.ManagementMenu$4 actionPerformed
+INFOS: Patient Deleted From Management System
+sept. 09, 2021 9:45:35 AM frontend.management.ManagementMenu$1 actionPerformed
+INFOS: Open File Selected
+sept. 09, 2021 9:45:40 AM backend.JSONParser load
+INFOS: Loading Patients
+sept. 09, 2021 9:45:40 AM backend.Patient <init>
+INFOS: Creating A New Patient
+sept. 09, 2021 9:45:40 AM frontend.management.ManagementMenu$1 actionPerformed
+INFOS: Adding Patients To Management System
+sept. 09, 2021 9:45:40 AM frontend.management.PatientMenu addToList
+INFOS: Adding New Patient
+sept. 09, 2021 9:45:42 AM frontend.management.PatientMenu$1 valueChanged
+INFOS: Patient Selected
+sept. 09, 2021 9:45:42 AM frontend.management.data.InformationMenu <init>
+INFOS: Initialising Information Menu
+sept. 09, 2021 9:45:42 AM frontend.management.data.PersonalDetailsMenu <init>
+INFOS: Initialising Personal Details Menu
+sept. 09, 2021 9:45:42 AM frontend.management.data.MedicalDetailsMenu <init>
+INFOS: Initialising Medical Details Menu
+sept. 09, 2021 9:45:42 AM frontend.management.data.CommentsAndAppointmentsMenu <init>
+INFOS: Initialising Comments And Appointments Menu
+sept. 09, 2021 9:45:42 AM frontend.management.PatientMenu$1 valueChanged
+INFOS: Patient Selected
+sept. 09, 2021 9:45:42 AM frontend.management.data.InformationMenu <init>
+INFOS: Initialising Information Menu
+sept. 09, 2021 9:45:42 AM frontend.management.data.PersonalDetailsMenu <init>
+INFOS: Initialising Personal Details Menu
+sept. 09, 2021 9:45:42 AM frontend.management.data.MedicalDetailsMenu <init>
+INFOS: Initialising Medical Details Menu
+sept. 09, 2021 9:45:42 AM frontend.management.data.CommentsAndAppointmentsMenu <init>
+INFOS: Initialising Comments And Appointments Menu
